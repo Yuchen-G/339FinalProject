@@ -1,0 +1,196 @@
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 12pt;
+    background-color: #fff;
+}
+
+p, h1{
+    padding: 0 1em 0 1em;
+}
+a.skip {
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+
+a.skip:focus {
+    top: 20px;
+    color: black;
+    text-decoration-style: solid;
+}
+
+header {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: column;
+    text-align: center;
+    /* justify-content: space-between; */
+}
+
+#logo {
+    margin: auto;
+    width: 50px;
+}
+
+.nav_links {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav_links .active {
+    background-color: #4CAF50;
+    text-decoration: underline;
+}
+
+.footer {
+    padding-top: 5px;
+    background-color: gray;
+}
+
+.footer_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav_item a,
+.footer_item a,
+.footer_text {
+    color: black;
+    text-decoration: none;
+}
+
+.footer_text {
+    text-align: center;
+}
+
+.nav_item a:hover,
+a:focus {
+    color: #50C7C7;
+    text-decoration: underline;
+    -webkit-text-decoration-style: dotted;
+    text-decoration-style: dotted;
+}
+
+
+
+/* Contact form */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.form_container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.contact_text {
+    text-align: center;
+    padding: 0 2em 0 2em;
+}
+
+/* index page grid */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+    row-gap: 1px;
+    column-gap: 2px;
+}
+
+.image_0,
+.image_2,
+.image_4,
+.image_6,
+.image_8 {
+    grid-column: 1/span 1;
+}
+
+.image_1,
+.image_3,
+.image_5,
+.image_7,
+.image_9 {
+    grid-column: 2/span 1;
+}
+
+.image_0,
+.image_1 {
+    grid-row: 1/span 1;
+}
+
+.image_2,
+.image_3 {
+    grid-row: 2/span 1;
+}
+
+.image_4,
+.image_5 {
+    grid-row: 3/span 1;
+}
+
+.image_6,
+.image_7 {
+    grid-row: 4/span 1;
+}
+
+.image_8,
+.image_9 {
+    grid-row: 5/span 1;
+}
+
+.img0,
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6,
+.img7,
+.img8,
+.img9 {
+    width: 100%;
+}
