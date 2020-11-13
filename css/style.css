@@ -3,13 +3,17 @@ body {
     margin: 0;
     /* padding:  0 1em 0 1em; */
     font-size: 16pt;
-    background-color: #fff;
+    background-color: #fff1e6;
 }
 
-p,
+/* p,
 h1 {
-    padding: 0 1em 0 1em;
-}
+    
+} */
+
+/* .container{
+
+} */
 
 /* skip to main content */
 a.skip {
@@ -115,10 +119,10 @@ a:focus {
 
 /* footer section */
 .footer {
-    /* position: static; */
+    position: static;
     bottom: 0;
     width: 100%;
-    padding-top: 5px;
+    padding: 5px 5px;
     background-color: rgb(0, 47, 167);
     font-size: 12px;
 }
@@ -141,7 +145,21 @@ a:focus {
 }
 
 main{
-    margin-top: 70px;
+    margin: 70px 0 10px;
+    padding: 0 1em 0 1em;
+}
+
+figcaption{
+    text-align: center;
+}
+
+.thank_img{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3em;
+    padding-bottom: 2em;
 }
 
 /* Contact form */
