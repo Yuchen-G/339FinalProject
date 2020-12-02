@@ -7,6 +7,15 @@
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="images/logo_icon.jpeg" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L765SZNHYG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-L765SZNHYG');
+    </script>
     <title>Contact Us</title>
 </head>
 
@@ -18,8 +27,8 @@
                 <li class="nav_item"><a href="index.html">HOME</a></li>
                 <li class="nav_item"><a href="FAQ.html">FAQ</a></li>
             </ul>
-                <img src='images/logo_icon.jpeg' class='nav_img' alt='logo' id='logo'>    
-            
+            <img src='images/logo_icon.jpeg' class='nav_img' alt='logo' id='logo'>
+
             <ul class='right'>
                 <li class="nav_item active"><a href="Contact.html">CONTACT</a></li>
                 <li class="nav_item"><a href="About.html">ABOUT US</a></li>
@@ -37,7 +46,7 @@
         </p>
 
         <div class="form_container">
-            <form action="action_page.php">
+            <form action="https://formspree.io/f/xvovbdze" method="POST">
 
                 <label for="fname">First Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name..">
