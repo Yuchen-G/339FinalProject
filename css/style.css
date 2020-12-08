@@ -80,7 +80,7 @@ header {
 
 .nav_item a:hover,
 a:focus {
-  color: #50C7C7;
+  color:#68DEA7;
   text-decoration: underline;
   -webkit-text-decoration-style: dotted;
   text-decoration-style: dotted;
@@ -144,6 +144,7 @@ a:focus {
     opacity: 1;
   }
 }
+
 
 #logo {
   animation: fadeIn 2s;
@@ -271,7 +272,7 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: darkgreen;
+  background-color: #68DEA7;
 }
 
 /* Add a background color and some padding around the form */
@@ -336,19 +337,23 @@ We have added the border property to demonstrate that the flip itself goes out o
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
+
   width: 700px;
-  height: 200px;
+  max-width: 100%;
+  /* height: 200px; */
+  min-height: 200px;
   display: block;
   border: 1px solid #f1f1f1;
-  margin: 30px;
+  /* margin: 30px; */
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
-  width: 100%;
-  height: 100%; 
+  max-width: 100%;
+  /* height: 200px; */
+  min-height: 200px;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
@@ -366,7 +371,7 @@ We have added the border property to demonstrate that the flip itself goes out o
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 90%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
@@ -379,12 +384,16 @@ We have added the border property to demonstrate that the flip itself goes out o
 
 /* Style the back side */
 .flip-card-back {
-  background-color: orange;
+  background-color: #68DEA7;
   color: black;
   transform: rotateY(180deg);
   padding-top: 20px;
 }
 
+.thank_img {
+  max-width: 100%;
+  height: auto;
+}
 
 
 /* --Media Queries-- */
